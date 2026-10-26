@@ -118,7 +118,7 @@ img{max-width:100%;height:auto}
 .chip .dot{width:10px;height:10px;border-radius:50%;background:#34e0a1;box-shadow:0 0 0 0 rgba(52,224,161,.7);animation:pulse 2s infinite}
 .hero-bubbles,.bubbles{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
 .bub{position:absolute;bottom:-60px;left:var(--x);width:var(--s);height:var(--s);border-radius:50%;background:radial-gradient(circle at 30% 28%,rgba(255,255,255,.85),rgba(255,255,255,.14) 38%,rgba(123,227,247,.12) 70%);border:1px solid rgba(255,255,255,.35);opacity:0;animation:bubble var(--d) linear var(--dl) infinite}
-.hero-pane{position:absolute;z-index:-1;right:-70px;top:19%;width:290px;opacity:.9;pointer-events:none}
+.hero-pane{position:absolute;z-index:-1;right:-90px;top:52%;width:250px;opacity:.4;pointer-events:none}
 .hero-pane .glint{transform:translateX(-140%) skewX(-18deg);animation:glint 5.5s var(--ease) infinite}
 .hero-pane .glint2{animation-delay:.22s}
 .hero-pane .sq{animation:squee 5.5s var(--ease) infinite}
@@ -143,6 +143,7 @@ img{max-width:100%;height:auto}
   .scroll-cue{display:flex;flex-direction:column;left:46px;transform:none;bottom:70px}
 }
 
+@media(min-width:1600px){.hero-img{inset:0 0 0 54%}}
 /* Hero stat chips floating on the photo (desktop) */
 .float-card{position:absolute;z-index:3;display:none;align-items:center;gap:.8rem;padding:.9rem 1.1rem;border-radius:20px;background:rgba(255,255,255,.96);color:var(--ink);box-shadow:0 24px 50px -18px rgba(0,0,0,.65);animation:float 7s ease-in-out infinite}
 @media(min-width:1024px){.float-card{display:flex}}
