@@ -37,7 +37,7 @@
   <!-- ===================== Fonts + hero preload ===================== -->
   <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" as="image" href="images/work/cover.webp" imagesrcset="images/work/cover-sm.webp 720w, images/work/cover.webp 1200w" imagesizes="(min-width:1024px) 54vw, 100vw" fetchpriority="high">
+  <link rel="preload" as="image" href="images/work/058-sm.webp" imagesrcset="images/work/058-sm.webp 720w, images/work/058.webp 1200w" imagesizes="(min-width:1024px) 460px, 340px" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- ===================== Structured data ===================== -->
@@ -152,36 +152,11 @@
 <main id="main">
 
 <!-- ===================== HERO ===================== -->
-<section class="hero" id="top">
-  <div class="hero-img" aria-hidden="false" data-parallax>
-    <img src="images/work/cover.webp" srcset="images/work/cover-sm.webp 720w, images/work/cover.webp 1200w" sizes="(min-width:1024px) 54vw, 100vw" width="1200" height="1600" alt="The V1 Window Cleaning van under a deep red evening sky" fetchpriority="high">
-  </div>
-  <div class="hero-shade" aria-hidden="true"></div>
-  <div class="hero-bubbles" data-bubbles="16" aria-hidden="true"></div>
+<section class="hero hero-light" id="top">
+  <div class="hl-bg" aria-hidden="true"><span class="blob1"></span><span class="blob2"></span><div class="hero-bubbles" data-bubbles="14"></div></div>
 
-  <!-- animated window pane: squeegee wipe + glint + drip -->
-  <svg class="hero-pane" viewBox="0 0 300 300" aria-hidden="true">
-    <defs>
-      <clipPath id="pc"><rect x="22" y="22" width="256" height="256" rx="20"/></clipPath>
-      <linearGradient id="gl" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-    </defs>
-    <rect x="22" y="22" width="256" height="256" rx="20" fill="rgba(123,227,247,.10)"/>
-    <g clip-path="url(#pc)">
-      <g class="glint"><rect x="0" y="-30" width="46" height="360" fill="url(#gl)"/></g>
-      <g class="glint glint2"><rect x="70" y="-30" width="14" height="360" fill="url(#gl)"/></g>
-      <g class="sq"><rect x="12" y="34" width="9" height="232" rx="4.500" fill="#2dd4f0"/><rect x="2" y="140" width="30" height="20" rx="10" fill="#fff" opacity=".9"/></g>
-    </g>
-    <rect x="22" y="22" width="256" height="256" rx="20" fill="none" stroke="#fff" stroke-opacity=".65" stroke-width="6"/>
-    <path d="M150 24v252M24 150h252" stroke="#fff" stroke-opacity=".55" stroke-width="5"/>
-    <g class="drip"><path d="M214 60c5 8 9 12 9 17a9 9 0 0 1-18 0c0-5 4-9 9-17z" fill="#7be3f7"/></g>
-  </svg>
-
-  <span class="spark" style="--s:20px;top:15%;right:12%;--dl:.4s" aria-hidden="true"></span>
-  <span class="spark" style="--s:14px;top:60%;right:8%;--dl:1.6s" aria-hidden="true"></span>
-  <span class="spark" style="--s:26px;top:8%;right:34%;--dl:2.4s" aria-hidden="true"></span>
-
-  <div class="container hero-inner">
-    <div class="max-w-[640px] lg:max-w-[700px]">
+  <div class="container hero-inner hl-grid">
+    <div class="hl-text">
       <span class="chip fade-up" style="--i:0"><span class="dot"></span>Vale, Guernsey &middot; 100% recommend</span>
 
       <h1 class="mt-5">
@@ -191,23 +166,30 @@
         <span class="ln"><span style="--i:3">in <span class="marker">Guernsey<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12c60-9 130-10 292-2"/></svg></span></span></span>
       </h1>
 
-      <p class="lead mt-5 max-w-[34ch] !text-white/90 fade-up sm:max-w-[46ch]" style="--i:5">Not your average window cleaner. A very reliable and friendly local team for your windows, gutters, fascias, render and patios.</p>
+      <p class="lead mt-5 max-w-[36ch] fade-up sm:max-w-[40ch]" style="--i:5">Not your average window cleaner. A very reliable and friendly local team for your windows, gutters, fascias, render and patios.</p>
 
       <div class="mt-7 flex flex-col gap-3 sm:flex-row fade-up" style="--i:6">
-        <a href="tel:+447781425697" class="btn btn-white btn-lg"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Call 07781 425697</a>
         <a href="#quote" class="btn btn-red btn-lg">Get a free quote <svg class="i arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="tel:+447781425697" class="btn btn-white btn-lg"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Call 07781 425697</a>
       </div>
     </div>
-  </div>
 
-  <!-- floating cards over the photo (desktop) -->
-  <div class="float-card" style="right:4%;top:16%" aria-hidden="true">
-    <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-thumb"/></svg></span>
-    <span><b class="display block text-xl leading-none">100% recommend</b><span class="text-sm text-slate-500">11 Facebook reviews</span></span>
-  </div>
-  <div class="float-card" style="left:calc(46% + 36px);bottom:17%;animation-delay:-3s" aria-hidden="true">
-    <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sparkle"/></svg></span>
-    <span><b class="display block text-xl leading-none">Free quotes</b><span class="text-sm text-slate-500">Call or text anytime</span></span>
+    <!-- Real job photo: the "before" is wiped away to reveal the "after", on a loop -->
+    <div class="hl-visual fade-up" style="--i:3">
+      <span class="ring r1" aria-hidden="true"></span><span class="ring r2" aria-hidden="true"></span>
+      <figure class="hero-ba">
+        <img class="a" src="images/work/058-sm.webp" srcset="images/work/058-sm.webp 720w, images/work/058.webp 1200w" sizes="(min-width:1024px) 460px, 340px" width="1440" height="1793" alt="A gable end after a V1 softwash, the render bright and clean" fetchpriority="high">
+        <img class="b" src="images/work/057-sm.webp" srcset="images/work/057-sm.webp 720w, images/work/057.webp 1200w" sizes="(min-width:1024px) 460px, 340px" width="1440" height="1793" alt="The same gable end before, with dark streaks and algae on the render" decoding="async">
+        <span class="sqg" aria-hidden="true"><span class="knob"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l1.900 5.100L19 10l-5.100 1.900L12 17l-1.900-5.100L5 10l5.100-1.900z"/></svg></span></span>
+        <figcaption class="tagline">A real V1 softwash &middot; before &rarr; after</figcaption>
+      </figure>
+      <figure class="hc-photo"><img src="images/work/091-sm.webp" width="720" height="540" alt="A cream rendered house with dormer windows after a softwash" loading="eager" style="object-position:30% 50%"></figure>
+      <div class="hc hc1"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-thumb"/></svg></span><span><b>100% recommend</b><small>11 Facebook reviews</small></span></div>
+      <div class="hc hc2"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sparkle"/></svg></span><span><b>Free quotes</b><small>Call or text anytime</small></span></div>
+      <span class="spark" style="--s:22px;top:4%;left:-3%;--dl:.4s" aria-hidden="true"></span>
+      <span class="spark" style="--s:16px;top:38%;right:-4%;--dl:1.6s" aria-hidden="true"></span>
+      <span class="spark" style="--s:26px;bottom:3%;right:-3%;--dl:2.4s" aria-hidden="true"></span>
+    </div>
   </div>
 
   <a href="#trust" class="scroll-cue" aria-label="Scroll down"><i></i><span>Scroll</span></a>
@@ -418,7 +400,7 @@
     <div class="thumbs mt-6" id="ba-thumbs" role="list" aria-label="Choose a job">
           <button class="thumb" type="button" data-cat="soft" data-before="004" data-after="005" data-w="1280" data-h="960" data-title="House front softwash" data-cap="One of a few mini softwash jobs." aria-label="House front softwash" aria-current="true"><img src="images/work/005-sm.webp" alt="" width="112" height="112" loading="lazy"></button>
           <button class="thumb" type="button" data-cat="soft" data-before="012" data-after="013" data-w="960" data-h="1280" data-title="Render and garage wall" data-cap="Lovely results on a render softwash." aria-label="Render and garage wall"><img src="images/work/013-sm.webp" alt="" width="112" height="112" loading="lazy"></button>
-          <button class="thumb" type="button" data-cat="soft" data-before="016" data-after="017" data-w="960" data-h="1280" data-title="Green marks off the render" data-cap="Nice results from a house clean." aria-label="Green marks off the render"><img src="images/work/017-sm.webp" alt="" width="112" height="112" loading="lazy"></button>
+          <button class="thumb" type="button" data-cat="soft" data-before="016" data-after="017" data-w="960" data-h="1280" data-title="Green marks off the render" data-cap="Nice results from a house clean." aria-label="Green marks off the render"><img src="images/work/058-sm.webp" alt="" width="112" height="112" loading="lazy"></button>
           <button class="thumb" type="button" data-cat="soft" data-before="014" data-after="015" data-w="960" data-h="1280" data-title="Side passage wall" data-cap="Render softwash along a narrow side passage." aria-label="Side passage wall"><img src="images/work/015-sm.webp" alt="" width="112" height="112" loading="lazy"></button>
           <button class="thumb" type="button" data-cat="soft" data-before="029" data-after="030" data-w="1280" data-h="960" data-title="Block of three houses" data-cap="Softwashing a block of three houses — such an improvement." aria-label="Block of three houses"><img src="images/work/030-sm.webp" alt="" width="112" height="112" loading="lazy"></button>
           <button class="thumb" type="button" data-cat="soft" data-before="031" data-after="032" data-w="1280" data-h="960" data-title="Rear wall softwash" data-cap="From the same softwash job on a block of three houses." aria-label="Rear wall softwash"><img src="images/work/032-sm.webp" alt="" width="112" height="112" loading="lazy"></button>
