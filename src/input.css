@@ -160,9 +160,9 @@ img{max-width:100%;height:auto}
 .trust-card>div:nth-child(odd){border-right:1px solid #e8eefb}
 .trust-card>div:nth-last-child(-n+2){border-bottom:0}
 .trust-card .ic{width:46px;height:46px;border-radius:14px;background:var(--brand-50,#eef5ff);color:var(--brand);display:grid;place-items:center;flex:none;background:#eef5ff}
-.trust-card b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.5rem;line-height:1;color:var(--ink)}
+.trust-card b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.15rem;line-height:1;color:var(--ink)}
 .trust-card span.l{font-size:.82rem;color:#5a6684;line-height:1.25;display:block;margin-top:3px}
-@media(min-width:900px){.trust-card{grid-template-columns:repeat(4,1fr)}.trust-card>div{border:0!important;border-right:1px solid #e8eefb!important;padding:26px 26px}.trust-card>div:last-child{border-right:0!important}.trust-card b{font-size:1.9rem}}
+@media(min-width:900px){.trust-card{grid-template-columns:repeat(4,1fr)}.trust-card>div{border:0!important;border-right:1px solid #e8eefb!important;padding:26px 26px}.trust-card>div:last-child{border-right:0!important}.trust-card b{font-size:1.3rem}}
 .marquee{overflow:hidden;white-space:nowrap;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .marquee-track{display:inline-flex;gap:2.2rem;padding-right:2.2rem;animation:marquee 38s linear infinite}
 .marquee:hover .marquee-track{animation-play-state:paused}
